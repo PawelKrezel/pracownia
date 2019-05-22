@@ -1,0 +1,50 @@
+body
+{
+	padding: 20px;
+}
+header, footer
+{
+	text-align: center;
+}
+article
+{
+	text-align: center;
+	width: 400px;
+	border-style: solid;
+	border-width: 1px;
+	padding: 15px;
+}
+.lewy
+{
+	margin-left: 20%; 
+}
+.prawy
+{
+	margin-right: 20%;
+}
+.detale
+{
+	padding-top: 10px;
+	text-align: left;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-gap: 10px;
+}
+.specyfikacje
+{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-row-gap: 10px;
+}
+@media only screen and (max-width: 1200px)
+{
+	.specyfikacje
+	{
+		grid-template-columns: 100%;
+	}
+	article, .lewy, .prawy
+	{
+		margin-left: auto;
+		margin-right: auto; 
+	}
+}
